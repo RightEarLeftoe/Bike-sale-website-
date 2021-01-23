@@ -1,0 +1,63 @@
+<DOCTYPE! html> 
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta chatset="uft-8" /> <!--This sets the character set -->
+    <link rel="stylesheet" href="Styles_website.css"> <!--This is the link to the websites style sheet containing the css-->
+   <script src ="code.js" defer></script> <!--This is the link to the file containing the Java code-->
+<head>
+    <meta name="author" content="David Atkins">
+    <title>Product1</title>
+</head>
+
+<body onload="Bcolour(), textSize()"><!--The onloads activate functions in the Java code-->
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<section class = "custom"><ul><!--The buttons below change different elements of the nav bar including the text size and colour-->
+  <li><button onclick="sizeB(1)" id="1">A+</button></li>
+  <li><button onclick="sizeB(2)" id="2">A</button></li>
+  <li><button onclick="sizeB(3)" id="3">A-</button></li>
+  <li><button onclick="sizeB(4)" id="4" class="Bbutton1"><span>&#9632;</span></button></li>
+  <li><button onclick="sizeB(5)" id="5" class="Bbutton2"><span>&#9632;</span></button></li>
+</ul>
+</section>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<img src="Images/Biking_background2.jpg" alt="Bikeing banner" class="banner"><!--The banner at the top of the page-->
+
+<nav class="nav" id="myTopnav"><!--The code in here contains the nav bar-->
+  <a href="Index.html">Home</a>
+  <a href="Products.html">Products</a>
+  <a href="Register.html">Register</a>
+  <a href="Slideshow.html">Slideshow</a>
+  <a href="TipsAndTricks.html">Tips and Tricks</a>
+  <a href="javascript:void(0);" class="icon" onclick="Navbar()"><!--This code links to the Java code which makes the nav bar into a list when the screen size changes-->
+  <div class="burger" onclick="myBurger(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+  </a>
+</nav>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <article class="box1">
+        <h2><br><br>Calibre Saw Mountain Bike</br></br></h2>
+        <p><br<br></p>
+        <form action="Index.html">
+            <label for="bikes">Choose number:</label>
+            <select id="" name="">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            <input type="submit" value="checkout">
+          </form>
+          <p><br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;</p>
+    </article>
+    <img src="Images/Mountain_bikeP1.jpg" alt="Self pic" class="img4">
+
+    <footer class="footer">
+      <p>©Bikes&Gear</p>
+    </footer>
+</body>
+</html>

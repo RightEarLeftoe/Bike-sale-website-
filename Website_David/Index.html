@@ -1,0 +1,68 @@
+<DOCTYPE! html> 
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta chatset="uft-8" /> <!--This sets the character set -->
+    <link rel="stylesheet" href="Styles_website.css"> <!--This is the link to the websites style sheet containing the css-->
+   <script src ="code.js" defer></script> <!--This is the link to the file containing the Java code-->
+<head>
+    <meta name="author" content="David Atkins">
+    <title>Home Page</title>
+</head>
+
+<body onload="Bcolour(), textSize()"><!--The onloads activate functions in the Java code-->
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<section class = "custom"><ul><!--The buttons below change different elements of the nav bar including the text size and colour-->
+  <li><button onclick="sizeB(1)" id="1">A+</button></li>
+  <li><button onclick="sizeB(2)" id="2">A</button></li>
+  <li><button onclick="sizeB(3)" id="3">A-</button></li>
+  <li><button onclick="sizeB(4)" id="4" class="Bbutton1"><span>&#9632;</span></button></li>
+  <li><button onclick="sizeB(5)" id="5" class="Bbutton2"><span>&#9632;</span></button></li>
+</ul>
+</section>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <img src="Images/Biking_background2.jpg" alt="Bikeing banner" class="banner"><!--The banner at the top of the page-->
+
+    <nav class="nav" id="myTopnav"><!--The code in here contains the nav bar-->
+        <a href="Index.html">Home</a>
+        <a href="Products.html">Products</a>
+        <a href="Register.html">Register</a>
+        <a href="Slideshow.html">Slideshow</a>
+        <a href="TipsAndTricks.html">Tips and Tricks</a>
+        <a href="javascript:void(0);" class="icon" onclick="Navbar()"><!--This code links to the Java code which makes the nav bar into a list when the screen size changes-->
+        <div class="burger" onclick="myBurger(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+          </div>
+        </a>
+    </nav>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <article class="box1"> <!--These articles conatin the main content for this page-->
+        <h2>What we do</h2>
+        <p id="font">On this webiste you can find great bikes at great prices to suit all your needs. This includes mountain bikes to road bikes. No matter what kind of biking you do biking is a great healthy sport to get into which not only is healthy but enjoyable.</p>
+        <article>
+            <h2>Mountain biking?</h2>
+            <p id="font">Mountain biking is a more extreme version of normal bikeing. This is probably not for yhe more casual riders, though it can be very fun. Mountian biking involves bikeing off road on more then often rough terrain. This can be done anywhere but there are designated mountain bike tracks which can be found round the country. There are usual different levleed tracks starting from blue to black. Beginners should start on the blue tracks and and work there way up to red or black tracks.  </p>
+        </article>
+        <article>
+            <h2>Road biking?</h2>
+            <p id="font">Road biking is a more causal form of biking though can still be very challenging. As the name suggest this biking is done on roads and can range from more casual road biking to more competative. For the more competative bikers specialist light weight bikes can be used for road biking.  </p>
+        </article>
+    </article>
+
+    <img src="Images/orange_mountain_bike1.jpg" alt="Mountain bike" class="img1"><!--Images displayed in the first page-->
+    <img src="Images/blue_road_bike1.jpg" alt="road bike" class="img2"> 
+    
+    <aside class="box4">
+        <h2>About us</h2>
+        <p><br>We are a website dedicated to selling bikes and spreading information about various forms of biking. Biking is healthy fun sport which can be done anywhere. This website will include mutiple biking products from bikes of all kind to biking gear. Tips and tricks for biking can also be found on this website to help out new people to biking. </p>
+        <h2><br>Lessons</h2>
+        <p><br>We are based in Stafford Staffordshire and have alot of experiance in mountain bikeing. Feel free to call us on 07834 677511 to organise beginner to expert mountain biking lessons. These lessons will take place at Cannock chase Mountain bikeing tracks. We also offer lessons on bike maintance to make sure you keep your bikes in top condition.</p>
+        <h2><br>Socials</h2>
+        <p><br>Feel free to follow us on are multiple social media accounts including are instagram- Bikes&GearIns. Are Facebook page- Bikes&Gear. And are reddit for great on the go biking advice. Feel free to send us any biking pics of you on the go when biking or contact us for advice on bikes&Gear@gmail.com or calling us on 07834 677511.</p>
+    </aside>
+    <footer class="footer"><!--The footer-->
+        <p>©Bikes&Gear</p>
+    </footer>
+    </body>
+  </html>

@@ -1,0 +1,53 @@
+<DOCTYPE! html> 
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta chatset="uft-8" /> <!--This sets the character set -->
+    <link rel="stylesheet" href="Styles_website.css"> <!--This is the link to the websites style sheet containing the css-->
+   <script src ="code.js" defer></script> <!--This is the link to the file containing the Java code-->
+<head>
+    <meta name="author" content="David Atkins">
+    <title>Tips and tricks</title>
+</head>
+
+<body onload="Bcolour(), textSize()"><!--The onloads activate functions in the Java code-->
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<section class = "custom"><ul><!--The buttons below change different elements of the nav bar including the text size and colour-->
+  <li><button onclick="sizeB(1)" id="1">A+</button></li>
+  <li><button onclick="sizeB(2)" id="2">A</button></li>
+  <li><button onclick="sizeB(3)" id="3">A-</button></li>
+  <li><button onclick="sizeB(4)" id="4" class="Bbutton1"><span>&#9632;</span></button></li>
+  <li><button onclick="sizeB(5)" id="5" class="Bbutton2"><span>&#9632;</span></button></li>
+</ul>
+</section>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <img src="Images/Biking_background2.jpg" alt="Bikeing banner" class="banner"><!--The banner at the top of the page-->
+
+    <nav class="nav" id="myTopnav"><!--The code in here contains the nav bar-->
+        <a href="Index.html">Home</a>
+        <a href="Products.html">Products</a>
+        <a href="Register.html">Register</a>
+        <a href="Slideshow.html">Slideshow</a>
+        <a href="TipsAndTricks.html">Tips and Tricks</a>
+        <a href="javascript:void(0);" class="icon" onclick="Navbar()"><!--This code links to the Java code which makes the nav bar into a list when the screen size changes-->
+        <div class="burger" onclick="myBurger(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+          </div>
+        </a>
+    </nav>
+
+    <section class="container">
+        <article><h2>Tips and tricks 1</h2> <p>Make sure before doing any long journey on bikes to check your tire pressures. Moutnain bikes should be between 20-40pi and road bikkes should be 60-90pi.</p></article>
+        <article><h2>Tips and tricks 2</h2> <p>Alwasy make sure to bring spare tiers with you on bike journeys. Make sure you hvae the correct size tiers. The size can often be found on the side of the tier.</p>
+        <p>The map below shows the location of good beginner mountain bike tracks which can be found at canncok chase</p></article>
+        <article><h2>Tips and tricks 3</h2> <p>Always wear the correct amount of protective equipment. This normally is nothing more than a helmet and gloves but some mountain biking trails may require more protection.</p></article>
+      </section>
+      
+      <!--the code below is for showing a google maps on the website-->
+      <div style="width: 100%"><iframe width="100%" height="600"  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=52.7356564,-1.9899716+(Marquis%20Drive,%20Hednesford,%20Cannock,%20Staffordshire,%20WS12%204PW)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
+      <footer class="footer"><!--The footer-->
+        <p>©Bikes&Gear</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,428 @@
+@charset "utf-8";
+ /*Code for the header*/
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+  }
+.banner{
+    width: 100%;
+  }
+.footer{
+  width: 100%;
+  list-style-type: none;
+  margin-top: 1%;
+  padding: 0;
+  overflow: hidden;
+  background-color: grey;
+  color:white;
+  text-align: center;
+  }
+  /*-------------------------------------------------------------------------------------map-------------------------------------------------------------------------------------------------*/
+  .map{
+    margin-left: 42%;
+  }
+
+
+ /*-------------------------------------------------------------------------------------Buttons-------------------------------------------------------------------------------------------------*/
+ /*The code below set the propties for the buttons at the top of the page*/ 
+.custom{
+    width: 50%;
+    text-align: right;
+    margin-left: auto;
+    margin-bottom: auto;
+  }
+  
+  .custom ul { list-style-type: none;
+  padding: 0;
+  margin: 0;
+  }
+  .custom ul li {
+    display: inline;
+  }
+
+  .Bbutton1 span{
+    display: inline-block;
+    background-color: 4F4C4C;
+    width: 20px;
+  }
+  .Bbutton2 span{
+    display: inline-block;
+    background-color: grey;
+    width: 20px;
+  }
+  /*--------------------------------------------------------------------------------Slideshow arrow----------------------------------------------------------------------------------------------*/
+  /*This sets the properites for the leftarrow of the slide show*/
+  .leftArrow{
+    margin-left: 20%;
+  }
+  /*--------------------------------------------------------------------------------------Nav bar------------------------------------------------------------------------------------------------*/
+  /*Code below is for the navigation bar at the top of the page*/
+  .nav{
+    overflow: hidden;
+    background-color: grey;
+  }
+  .nav a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 220px;
+  }
+  .nav a:hover {
+    background-color: lightblue;
+  }
+  .nav .current{
+    background-color: lightblue;
+  }
+  .nav .icon {
+    display: none;
+  }
+ /*---------------------------------------------------------------------------------------Container-----------------------------------------------------------------------------------------------*/
+ /*The code below is for containers*/
+  .container {
+    display: flex;
+    background-color:white;
+  }
+  /*This sets the properties for articles inside the container*/
+  .container > article {
+    background-color: lightgrey;
+    margin-left: 10px;
+    margin-top:10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 600px;
+    text-align: center;
+  }
+  /*--------------------------------------------------------------------------------------Videos------------------------------------------------------------------------------------------------*/
+  /*Code belwo sets the properties for the videos used on the site*/
+  .vid {
+    background-color: lightgrey;
+    margin-left: 10px;
+    margin-top:10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 97.5%;
+    text-align: center;
+  }
+  .video{
+    width: 700px;
+  }
+  /*---------------------------------------------------------------------------------------Images-----------------------------------------------------------------------------------------------*/
+  /*The boxes below set different properties of the various images on the site*/
+  .img1{
+    float: right;
+    margin-right: 0%;
+    margin-top: -20%;
+    height: 380px;
+    width: 48%;  
+  }
+   .img2{
+   padding: 10px;
+   margin-top: 1%;
+   height: 500px;
+   width: 50%; 
+  }
+   .img3{
+   height: 300px;
+   width: 60%; 
+  }
+   .img4{
+    float: right;
+    margin-right:8%;
+    margin-top: -20%;
+    height: 380px;
+    width: 30%;  
+  }
+  /*---------------------------------------------------------------------------------------Boxes---------------------------------------------------------------------------------------------*/
+  /*Code below sets some properties for places areas on the wesite*/
+  .box1{
+    background-color: lightgrey;
+    width: 50%;
+    border: 0px solid;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .box4{
+    background-color: lightgrey;
+    float: right;
+    margin-right: 0%;
+    margin-top: -27%;
+    width: 48%;  
+  }
+  
+  /*--------------------------------------------------------------------------------------------Large Laptop-----------------------------------------------------------------------------------*/
+  /*Code beloew is for changeing properties of areas on the webpage when at large laptop screen*/
+  @media screen and (max-width: 1440px) {
+    
+  .leftArrow{
+   margin-left: 5%;
+  }
+
+  .img1{
+    float: right;
+    margin-right: 0%;
+    margin-top: -30.5%;
+    height: 380px;
+    width: 48%;  
+    }
+
+  .img3{
+    height: 200px;
+    width: 60%;  
+  }
+  .img4{
+    float: right;
+    margin-right:8%;
+    margin-top: -26%;
+    height: 380px;
+    width: 25%;  
+  } 
+ .box4{
+    background-color: lightgrey;
+    float: right;
+    margin-right: 0%;
+    margin-top: 2%;
+    width: 48%;  
+  }
+  
+  .nav a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 160px;
+    }
+
+  .vid {
+    background-color: lightgrey;
+    margin-left: 10px;
+    margin-top:10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 95%;
+    text-align: center;
+  }
+  /*-----------------------------------------------------------------------------------------------1318px----------------------------------------------------------------------------------------*/
+  /*changes properties at screen size 1318px*/
+  @media screen and (max-width: 1318px) { 
+    .leftArrow{
+      margin-left: 25%;
+    }
+    .active{
+      width: 50%;
+    }
+  }
+
+  /*--------------------------------------------------------------------------------------------Laptop-------------------------------------------------------------------------------------------*/
+  /*This changes properties of different areas of the website at a laptop screen size*/
+  @media screen and (max-width: 1249px) { 
+    .img1{
+      float: right;
+      margin-right: 0%;
+      margin-top: 2%;
+      height: 390px;
+      width: 48%;  
+    }
+    .img2{
+      padding: 10px;
+      margin-top: 1%;
+      height: 390px;
+      width: 50%; 
+    }
+    .img4{
+      float: left;
+      margin-left: 35%;
+      margin-top: 2%;
+      height: 380px;
+      width: 40%;  
+    }
+    
+    .box1{
+      background-color: lightgrey;
+      width: 98%;
+      border: 0px solid;
+      padding: 10px;
+      margin-top: 10px;
+    }
+    
+    .box4{
+      background-color: lightgrey;
+      float: left;
+      margin-left: 1%;
+      margin-top: 2%;
+      width: 99%;  
+    }
+    .nav a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      margin-left: 100px;
+    }
+    .footer{
+      width: 100%;
+      list-style-type: none;
+      margin-top: 8%;
+      padding: 0;
+      overflow: hidden;
+      background-color: grey;
+      color:white;
+      text-align: center;
+    }
+  }
+  /*--------------------------------------------------------------------------------------1016px-------------------------------------------------------------------------------------------------*/
+  /*Changes the img properites in advance of table size*/
+  @media screen and (max-width: 1016px) { 
+    .img1{
+      float: left;
+      margin-right: 0%;
+      margin-top: 2%;
+      height: 450px;
+      width: 100%;  
+    }
+    .img2{
+      float: left;
+      padding: 0px;
+      margin-top: 1%;
+      height: 450px;
+      width: 100%;  
+    }
+  }
+  /*------------------------------------------------------------------------------------------Tablet---------------------------------------------------------------------------------------------*/
+  /*This changes the propties of different areas to fit a table screen size*/
+  @media screen and (max-width: 956px) {
+    .img4{
+      float: right;
+      margin-right: 8%;
+      margin-top: 12%;
+      height: 380px;
+      width: 50%;  
+    }
+    
+    .nav a:not(:first-child) {display: none;}
+    .nav a.icon {
+      float: right;
+      display: block;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      background-color:white;
+    }
+    
+    .container > article {
+      background-color: lightgrey;
+      margin-top:10px;
+      margin-left: 20%;
+      padding: 20px;
+      font-size: 30px;
+      width: 400px;
+      text-align: center;
+    }
+    .vid {
+      background-color: lightgrey;
+      margin-left: 10px;
+      margin-top:10px;
+      padding: 20px;
+      font-size: 30px;
+      width: 94%;
+      text-align: center;
+    }
+    .video{
+      width: 700px;
+    }
+    /*The code below changes nav bar to a drop down list when at a smaller screen size*/
+    .nav.responsive {position: relative;}
+    .nav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  .burger {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  /*----------------------------------------------------------------------------------Mobile phone-----------------------------------------------------------------------------------------------------*/
+  /*This changes properties of the website to fir a mobile phone size screen*/
+  @media screen and (max-width: 652px) {
+    .img1{
+      float: left;
+      margin-right: 0%;
+      margin-top: 2%;
+      height: 250px;
+      width: 100%;  
+    }
+    .img2{
+      float: left;
+      padding: 0px;
+      margin-top: 1%;
+      height: 250px;
+      width: 100%;  
+    }
+    .img4{
+      float: right;
+      margin-right: 8%;
+      margin-top: 12%;
+      height: 380px;
+      width: 70%;  
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      background-color:white;
+    }
+    .container > article {
+      background-color: lightgrey;
+      margin-top:10px;
+      margin-left: -10%;
+      font-size: 30px;
+      width: 400px;
+      text-align: center;
+    }
+    .vid {
+      background-color: lightgrey;
+      margin-left: 10px;
+      margin-top:10px;
+      padding: 20px;
+      font-size: 30px;
+      width: 85%;
+      text-align: center;
+    }
+    .video{
+      width: 300px;
+    }
+
+  }
+}

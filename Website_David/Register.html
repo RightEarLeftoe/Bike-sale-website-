@@ -1,0 +1,74 @@
+<DOCTYPE! html> 
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta chatset="uft-8" /> <!--This sets the character set -->
+    <link rel="stylesheet" href="Styles_website.css"> <!--This is the link to the websites style sheet containing the css-->
+   <script src ="code.js" defer></script> <!--This is the link to the file containing the Java code-->
+<head>
+    <meta name="author" content="David Atkins">
+    <title>Register page</title>
+</head>
+
+<body onload="Bcolour(), textSize()"><!--The onloads activate functions in the Java code-->
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<section class = "custom"><ul><!--The buttons below change different elements of the nav bar including the text size and colour-->
+  <li><button onclick="sizeB(1)" id="1">A+</button></li>
+  <li><button onclick="sizeB(2)" id="2">A</button></li>
+  <li><button onclick="sizeB(3)" id="3">A-</button></li>
+  <li><button onclick="sizeB(4)" id="4" class="Bbutton1"><span>&#9632;</span></button></li>
+  <li><button onclick="sizeB(5)" id="5" class="Bbutton2"><span>&#9632;</span></button></li>
+</ul>
+</section>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<img src="Images/Biking_background2.jpg" alt="Bikeing banner" class="banner"><!--The banner at the top of the page-->
+
+<nav class="nav" id="myTopnav"><!--The code in here contains the nav bar-->
+  <a href="Index.html">Home</a>
+  <a href="Products.html">Products</a>
+  <a href="Register.html">Register</a>
+  <a href="Slideshow.html">Slideshow</a>
+  <a href="TipsAndTricks.html">Tips and Tricks</a>
+  <a href="javascript:void(0);" class="icon" onclick="Navbar()"><!--This code links to the Java code which makes the nav bar into a list when the screen size changes-->
+  <div class="burger" onclick="myBurger(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+  </a>
+</nav>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <section class = 'formReg'>
+    <h1>Register</h1>
+    
+    <form action="Index.html" method="post"><!--This creates a form-->
+
+  <fieldset><!--The code below is for the inputs for the registation page-->
+      <legend>login information</legend>
+        <p><label for="name">Name:</label><input type = "text" size="30" name="name" id = 'name' autofocus ></p>
+        <p><label for="email" class="contact">Email:</label><input type = "email" size="30" name="email" id = 'email'></p>
+        <p><label >Password:</label><input type = "text" size="30" name="passowrd" id = 'pw'></p>
+  </fieldset>
+  
+  <fieldset><!--This is the multiple choice boxes which are on the rgistration page-->
+    <legend>Select the kind of biking your interested in:</legend>
+      <p><input type="checkbox" name="biking" value="moutnain Biking"  /><label class = "biking">moutnain Biking</label>
+      <input type="checkbox" name="biking" value="road biking"  /><label class = "biking">road biking</label></p>
+      <p><input type="checkbox" name="biking" value="casual biking"  /><label class = "biking">casual biking</label>
+      <input type="checkbox" name="biking" value="childrens biking" > <label class = "biking">childrens biking</label></p>
+  </fieldset>
+  
+<p><!--These are the inputs for the form-->
+  <input type="submit" value="Submit"/>
+  <input type="reset" value="Clear" />
+</p>
+</section>
+</form>
+
+  <footer class="footer">
+    <p>©Bikes&Gear</p>
+</footer>
+  </body>
+
+    
+    
+</html>
